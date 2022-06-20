@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "license": "MIT",
+  "author": "alexzhang1030 <alexzhang1030@foxmail.com> (https://github.com/alexzhang1030/)",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@alexzzz/eslint-config": "^1.3.0",
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "eslint": "^8.18.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "typescript": "^4.7.4",
+    "vitepress": "1.0.0-alpha.2",
+    "vue": "^3.2.37"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,md}": [
+      "eslint --fix"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@alexzzz"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
