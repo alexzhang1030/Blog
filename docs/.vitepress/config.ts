@@ -4,8 +4,8 @@ import { presetAttributify, presetUno } from 'unocss'
 import { getNav } from './theme/data'
 
 export default defineConfig({
-  title: 'Alex\'s Blog',
-  description: 'A personal blog of Alex',
+  title: 'Alex\'s Website & Blog',
+  description: 'A personal website of Alex Zhang',
   lastUpdated: true,
   vite: {
     plugins: [Unocss({

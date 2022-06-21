@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { getTopicData } from '../data'
-import TopicContainer from './Topic/Container.vue'
-import Cate from './Cate.vue'
+import TopicContainer from './Topic/HomeItem.vue'
+import Cate from './Header.vue'
+import PageContainer from './PageContainer.vue'
 
 const TopicData = getTopicData()
 </script>
 
 <template>
-  <div class="container" px-4 md:px-0 box-border m="0 auto">
+  <page-container>
     <cate title="Topic">
       <topic-container
         v-for="(topic, i) of TopicData" :key="i" text="24px"
@@ -15,7 +16,7 @@ const TopicData = getTopicData()
         :name="topic.name" :link="topic.path"
       />
     </cate>
-  </div>
+  </page-container>
 </template>
 
 <style scoped>
