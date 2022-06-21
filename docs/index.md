@@ -1,3 +1,9 @@
-# Alex Zhang's Blog 
+---
+layout: home
+---
 
-你好世界！
+<script setup lang="ts">
+    import Home from "/@theme/components/Home.vue"
+</script>
+
+<Home />
