@@ -18,7 +18,9 @@
   "include": [
     "env.d.ts",
     "docs/**/*",
-    "docs/.vitepress/**/*"
+    "docs/.vitepress/**/*",
+    "data",
+    "types"
   ],
   "exclude": [
     "node_modules",

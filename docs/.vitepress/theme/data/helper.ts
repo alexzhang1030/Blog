@@ -1,5 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
-import type { Topic } from '../types'
+import type { Leetcode, Topic } from '../../../../types'
+import LeetcodeData from '../../../../data/leetcode.json'
 import TopicData from './topic'
 import NavData from './nav'
 
@@ -21,4 +22,8 @@ export function getNav(): DefaultTheme.NavItem[] {
     text: t.name,
     link: `${TOPIC_PATH_PREFIX}${t.path}`,
   })), ...NavData]
+}
+
+export function getLeetcode(): Leetcode[] {
+  return LeetcodeData
 }

@@ -7,3 +7,8 @@ export interface Topic {
     text: string
   }
 }
+
+export interface Leetcode {
+  name: string
+  path: string
+}
