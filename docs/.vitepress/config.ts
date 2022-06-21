@@ -24,5 +24,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/alexzhang1030/Blog' },
     ],
+    algolia: {
+      appId: '6RDOQ0CPME',
+      indexName: 'alexzhang',
+      apiKey: 'f606aa7e5b1909ce13da7dc405cada59',
+    },
   },
 })
