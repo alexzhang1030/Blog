@@ -12,7 +12,7 @@
     "paths": {
       "/@theme/*": [
         "/docs/.vitepress/theme/*"
-      ]
+      ],
     }
   },
   "include": [
