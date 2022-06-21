@@ -25,9 +25,9 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/alexzhang1030/Blog' },
     ],
     algolia: {
-      appId: '6RDOQ0CPME',
+      appId: 'OOCSYYJ17Q',
       indexName: 'alexzhang',
-      apiKey: 'f606aa7e5b1909ce13da7dc405cada59',
+      apiKey: 'a386a7bae0605420f6b4f0cc2eaf4f2a',
     },
   },
 })
