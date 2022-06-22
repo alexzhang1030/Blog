@@ -39,7 +39,7 @@ const open = (path: string) => {
       </div>
       <div flex="~">
         <l-tag :content="props.cate" :bg="tag.bg" :color="tag.color" />
-        <l-tag content="查看原题" bg="#0052cc" color="rgba(233, 236, 239)" ml-3 @click="open(props.origin)" />
+        <l-tag content="查看原题" bg="#0052cc" color="rgba(233, 236, 239)" ml-3 @click.stop="open(props.origin)" />
       </div>
     </div>
   </item-container>

@@ -1,4 +1,5 @@
 import { resolve } from 'path'
+import { NL } from '@alexzzz/nl'
 
 export const root = process.cwd()
 
@@ -24,3 +25,5 @@ function padStart(source: string, count: number, padStr: string): string {
 
   return source
 }
+
+export const taskLogger = new NL('任务', true)
