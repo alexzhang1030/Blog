@@ -29,5 +29,17 @@ export default defineConfig({
       indexName: 'alexzhang',
       apiKey: 'a386a7bae0605420f6b4f0cc2eaf4f2a',
     },
+    sidebar: {
+      '/Topic/Leetcode/Problems': [
+        {
+          text: 'Leetcode CN',
+          items: [
+            { text: '1. 两束值和', link: '/guide/' }, // /guide/index.md
+            { text: 'One', link: '/guide/one' }, // /guide/one.md
+            { text: 'Two', link: '/guide/two' }, // /guide/two.md
+          ],
+        },
+      ],
+    },
   },
 })

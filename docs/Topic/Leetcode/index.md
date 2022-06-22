@@ -4,7 +4,7 @@ layout: page
 
 <script setup lang="ts">
 import Container from '/@theme/components/Topic/TopicPageContainer.vue'
-import ItemContainer from '/@theme/components/List/ItemContainer.vue'
+import LeetcodeItem from "/@theme/components/List/LeetcodeItem.vue"
 import { getLeetcode } from '/@theme/data'
 
 const props = {
@@ -15,7 +15,6 @@ const props = {
 const LeetcodeData = getLeetcode()
 </script>
 
-
 <Container v-bind="props">
-  <item-container leetcode v-for="item in LeetcodeData" :path="item.path"></item-container>
+  <leetcode-item v-for="item in LeetcodeData" v-bind="item" />
 </Container>

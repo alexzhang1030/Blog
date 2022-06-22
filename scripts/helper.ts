@@ -1,7 +1,11 @@
 import { resolve } from 'path'
 
+export const root = process.cwd()
+
+export const withRoot = (path: string) => resolve(root, path)
+
 export function getTargetDir(targetFile: string): string {
-  return resolve(process.cwd(), './data/', targetFile)
+  return resolve(root, './data/', targetFile)
 }
 
 export function getTargetPath(targetPath: string): string {

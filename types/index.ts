@@ -11,4 +11,7 @@ export interface Topic {
 export interface Leetcode {
   name: string
   path: string
+  // "Easy", "Medium", "Hard"
+  cate: string
+  origin: string
 }
