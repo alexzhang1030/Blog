@@ -1,20 +1,26 @@
 [
   {
     "name": "1. 两数之和",
-    "path": "/Topic/Leetcode/Problems/00001",
+    "path": "/Topic/Leetcode/Problems/1",
     "cate": "Easy",
     "origin": "https://leetcode.cn/problems/two-sum/"
   },
   {
     "name": "2. 两数相加",
-    "path": "/Topic/Leetcode/Problems/00002",
+    "path": "/Topic/Leetcode/Problems/2",
     "cate": "Medium",
     "origin": "https://leetcode.cn/problems/add-two-numbers/"
   },
   {
     "name": "14. 最长公共前缀",
-    "path": "/Topic/Leetcode/Problems/00014",
+    "path": "/Topic/Leetcode/Problems/14",
     "cate": "Easy",
     "origin": "https://leetcode.cn/problems/longest-common-prefix/"
+  },
+  {
+    "name": "15. 三数之和",
+    "path": "/Topic/Leetcode/Problems/15",
+    "cate": "Medium",
+    "origin": "https://leetcode.cn/problems/3sum/"
   }
 ]
