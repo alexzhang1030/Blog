@@ -17,7 +17,7 @@ async function main() {
   const { path_name: path, questions } = topic.find(item => item.name === topic_type)!
   const answers = await inquirer.prompt(questions) as Record<string, string>
   const files = fg.sync([`./docs/Topic/${path}/*.md`], { dot: true })
-  const name = padStart((files.length + 1).toString(), 5, '0')
+  const name = padStart((answers.specify_number ? answers.specify_number : files.length + 1).toString(), 5, '0')
   const fullCreatePath = withRoot(`./docs/Topic/${path}/${name}.md`)
   writeFileSync(fullCreatePath, getInitFileContent(answers))
   taskLogger.end(`${topic_type} 创建完毕`)

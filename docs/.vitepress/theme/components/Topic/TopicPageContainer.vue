@@ -11,7 +11,7 @@ const props = defineProps<{
 <template>
   <page-container>
     <topic-header :title="props.title" :sub="props.subTitle" />
-    <div flex="~ col wrap" gap="20px" mt-20px>
+    <div flex="~ wrap" w-full justify-start gap="2.33%" mt-20px>
       <slot />
     </div>
   </page-container>

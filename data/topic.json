@@ -19,9 +19,14 @@
         "message": "原题链接"
       },
       {
+        "name": "specify_number",
+        "type": "input",
+        "message": "指定题号"
+      },
+      {
         "name": "name",
         "type": "input",
-        "message": "题号 - 题目"
+        "message": "题目名称"
       }
     ]
   },

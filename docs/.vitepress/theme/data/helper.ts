@@ -1,6 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 import type { Leetcode, Topic } from '../../../../types'
-import LeetcodeData from '../../../../data/leetcode.json'
+import LeetcodeData from '../../../../data/topic/leetcode.json'
 import TopicData from './topic'
 import NavData from './nav'
 
