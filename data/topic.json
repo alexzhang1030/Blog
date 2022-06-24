@@ -1,0 +1,39 @@
+[
+  {
+    "name": "leetcode",
+    "path_name": "Leetcode/Problems",
+    "questions": [
+      {
+        "name": "cate",
+        "type": "list",
+        "message": "选择一个分类",
+        "choices": [
+          "Easy",
+          "Medium",
+          "Hard"
+        ]
+      },
+      {
+        "name": "origin",
+        "type": "input",
+        "message": "原题链接"
+      },
+      {
+        "name": "name",
+        "type": "input",
+        "message": "题号 - 题目"
+      }
+    ]
+  },
+  {
+    "name": "engineering",
+    "path_name": "Engineering/Articles",
+    "questions": [
+      {
+        "name": "name",
+        "type": "input",
+        "message": "文章名称"
+      }
+    ]
+  }
+]

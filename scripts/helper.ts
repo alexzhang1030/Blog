@@ -6,7 +6,7 @@ export const root = process.cwd()
 export const withRoot = (path: string) => resolve(root, path)
 
 export function getTargetDir(targetFile: string): string {
-  return resolve(root, './data/', targetFile)
+  return resolve(root, './data/topic/', targetFile)
 }
 
 export function getTargetPath(targetPath: string): string {
@@ -19,7 +19,7 @@ export function getLeetcodePath(count: string) {
   return `${LeetcodeBasePath}${padStart(count, 5, '0')}`
 }
 
-function padStart(source: string, count: number, padStr: string): string {
+export function padStart(source: string, count: number, padStr: string): string {
   for (let i = source.length; i < count; i++)
     source = padStr + source
 
