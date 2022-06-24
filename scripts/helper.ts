@@ -20,10 +20,10 @@ export function getGeneratePath(type: string, count: string) {
 }
 
 export function padStart(source: string, count: number, padStr: string): string {
-  for (let i = source.length; i < count; i++)
-    source = padStr + source
-
-  return source
+  let final = source.toString()
+  for (let i = final.length; i < count; i++)
+    final = padStr + final
+  return final
 }
 
 export const taskLogger = new NL('任务', true)
