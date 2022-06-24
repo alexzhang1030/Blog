@@ -3,7 +3,7 @@ import fg from 'fast-glob'
 import matter from 'gray-matter'
 import type { Leetcode } from '../types'
 import TopicData from '../data/topic.json'
-import { getLeetcodePath, getTargetDir, getTargetPath, taskLogger, withRoot } from './helper'
+import { getGeneratePath, getTargetDir, getTargetPath, taskLogger, withRoot } from './helper'
 
 const names: { name: string; cate: string; origin: string }[] = []
 
@@ -21,7 +21,7 @@ const writeFile = (names: { name: string; cate: string; origin: string }[], type
   const finalResult: Leetcode[] = []
   names.forEach((item, index) => {
     const { name, cate, origin } = item
-    const path = getTargetPath(getLeetcodePath((index + 1).toString()))
+    const path = getTargetPath(getGeneratePath(type, (index + 1).toString()))
     finalResult.push({
       name,
       path,

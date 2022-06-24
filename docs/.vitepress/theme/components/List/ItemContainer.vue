@@ -3,6 +3,7 @@ import { useRouter } from 'vitepress'
 
 const props = defineProps<{
   path: string
+  leetcode?: boolean
 }>()
 
 const router = useRouter()
@@ -14,13 +15,13 @@ const goTo = () => {
 
 <template>
   <div
-    w="100%" sm="w-30%" rounded h-120px bg-gray-200 dark="bg-gray-300"
+    w="100%" sm="w-31%" rounded h-120px bg-gray-200 dark="bg-gray-300"
     hover="translate-y--2px" transition="duration-200" cursor="pointer"
     relative p-4 box-border
     @click="goTo"
   >
     <slot />
-    <img src="../../img/leetcode.png" w-50px absolute right-0 bottom-0>
+    <img v-if="props.leetcode" src="../../img/leetcode.png" w-50px absolute right-0 bottom-0>
   </div>
 </template>
 

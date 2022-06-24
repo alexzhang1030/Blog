@@ -1,5 +1,6 @@
 import { resolve } from 'path'
 import { NL } from '@alexzzz/nl'
+import Topic from '../data/topic.json'
 
 export const root = process.cwd()
 
@@ -13,10 +14,9 @@ export function getTargetPath(targetPath: string): string {
   return `/Topic/${targetPath}`
 }
 
-const LeetcodeBasePath = 'Leetcode/Problems/'
-
-export function getLeetcodePath(count: string) {
-  return `${LeetcodeBasePath}${padStart(count, 5, '0')}`
+export function getGeneratePath(type: string, count: string) {
+  const basePath = Topic.find(item => item.name === type)?.path_name
+  return `${basePath}/${padStart(count, 5, '0')}`
 }
 
 export function padStart(source: string, count: number, padStr: string): string {
