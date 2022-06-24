@@ -10,5 +10,11 @@
     "path": "/Topic/Leetcode/Problems/00002",
     "cate": "Medium",
     "origin": "https://leetcode.cn/problems/add-two-numbers/"
+  },
+  {
+    "name": "14. 最长公共前缀",
+    "path": "/Topic/Leetcode/Problems/00014",
+    "cate": "Easy",
+    "origin": "https://leetcode.cn/problems/longest-common-prefix/"
   }
 ]

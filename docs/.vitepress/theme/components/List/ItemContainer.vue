@@ -18,6 +18,7 @@ const goTo = () => {
     w="100%" sm="w-31%" rounded h-120px bg-gray-200 dark="bg-gray-300"
     hover="translate-y--2px" transition="duration-200" cursor="pointer"
     relative p-4 box-border
+    mb-20px
     @click="goTo"
   >
     <slot />

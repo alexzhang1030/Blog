@@ -5,23 +5,24 @@ import type { Leetcode } from '../types'
 import TopicData from '../data/topic.json'
 import { getGeneratePath, getTargetDir, getTargetPath, taskLogger, withRoot } from './helper'
 
-const names: { name: string; cate: string; origin: string }[] = []
+const names: { name: string; cate: string; origin: string; specify_number: string }[] = []
 
 const getBaseFile = (fileName: string) => {
   const file = readFileSync(withRoot(fileName), 'utf8')
-  const { cate, origin, name } = matter(file).data
+  const { cate, origin, name, specify_number } = matter(file).data
   names.push({
     name,
     cate,
     origin,
+    specify_number,
   })
 }
 
-const writeFile = (names: { name: string; cate: string; origin: string }[], type: string) => {
+const writeFile = (names: { name: string; cate: string; origin: string; specify_number: string }[], type: string) => {
   const finalResult: Leetcode[] = []
   names.forEach((item, index) => {
-    const { name, cate, origin } = item
-    const path = getTargetPath(getGeneratePath(type, (index + 1).toString()))
+    const { name, cate, origin, specify_number } = item
+    const path = getTargetPath(getGeneratePath(type, specify_number || (index + 1).toString()))
     finalResult.push({
       name,
       path,
