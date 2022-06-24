@@ -34,7 +34,7 @@ const open = (path: string) => {
 <template>
   <item-container leetcode :path="props.path">
     <div dark="text-gray-800" w-full h-full flex="~ col" justify="between" items="start">
-      <div text-24px>
+      <div text-18px class="title" w-full>
         {{ props.name }}
       </div>
       <div flex="~">
@@ -45,4 +45,12 @@ const open = (path: string) => {
   </item-container>
 </template>
 
-<style scoped></style>
+<style scoped>
+.title {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+</style>
