@@ -30,6 +30,12 @@
     "origin": "https://leetcode.cn/problems/palindrome-number/"
   },
   {
+    "name": "12. 整数转罗马数字",
+    "path": "/Topic/Leetcode/Problems/00012",
+    "cate": "Medium",
+    "origin": "https://leetcode.cn/problems/integer-to-roman/"
+  },
+  {
     "name": "13. 罗马数字转整数",
     "path": "/Topic/Leetcode/Problems/00013",
     "cate": "Easy",
@@ -70,5 +76,35 @@
     "path": "/Topic/Leetcode/Problems/00023",
     "cate": "Hard",
     "origin": "https://leetcode.cn/problems/merge-k-sorted-lists/"
+  },
+  {
+    "name": "24. 两两交换链表中的节点",
+    "path": "/Topic/Leetcode/Problems/00024",
+    "cate": "Medium",
+    "origin": "https://leetcode.cn/problems/swap-nodes-in-pairs/"
+  },
+  {
+    "name": "26. 删除有序数组中的重复项",
+    "path": "/Topic/Leetcode/Problems/00026",
+    "cate": "Easy",
+    "origin": "https://leetcode.cn/problems/remove-duplicates-from-sorted-array/"
+  },
+  {
+    "name": "94. 二叉树的中序遍历",
+    "path": "/Topic/Leetcode/Problems/00094",
+    "cate": "Easy",
+    "origin": "https://leetcode.cn/problems/binary-tree-inorder-traversal/"
+  },
+  {
+    "name": "498. 对角线遍历",
+    "path": "/Topic/Leetcode/Problems/00498",
+    "cate": "Medium",
+    "origin": "https://leetcode.cn/problems/diagonal-traverse/"
+  },
+  {
+    "name": "532. 数组中的 k-diff 数对",
+    "path": "/Topic/Leetcode/Problems/00532",
+    "cate": "Medium",
+    "origin": "https://leetcode.cn/problems/k-diff-pairs-in-an-array/"
   }
 ]
