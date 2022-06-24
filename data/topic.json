@@ -1,7 +1,13 @@
 [
   {
     "name": "leetcode",
+    "display_name": "Leetcode CN",
     "path_name": "Leetcode/Problems",
+    "home_page": "/Leetcode/index",
+    "color": {
+      "bg": "#0052cc",
+      "text": "rgba(233, 236, 239)"
+    },
     "questions": [
       {
         "name": "cate",
@@ -32,7 +38,13 @@
   },
   {
     "name": "engineering",
+    "display_name": "工程化",
     "path_name": "Engineering/Articles",
+    "home_page": "/Engineering/index",
+    "color": {
+      "bg": "#c2e0c6",
+      "text": "rgb(0, 0, 0)"
+    },
     "questions": [
       {
         "name": "name",
