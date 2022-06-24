@@ -11,5 +11,6 @@
 <style scoped>
 .container {
   max-width: calc(var(--vp-layout-max-width) - 64px);
+  margin-bottom: 40px;
 }
 </style>
