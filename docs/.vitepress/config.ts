@@ -18,6 +18,9 @@ export default async () => {
         ],
       })],
     },
+    markdown: {
+      theme: 'one-dark-pro',
+    },
     themeConfig: {
       footer: {
         message: 'Love & Peace & Vue Ecosystem',
