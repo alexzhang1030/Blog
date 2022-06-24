@@ -9,7 +9,7 @@ import { getLeetcode } from '/@theme/data'
 
 const props = {
   title: "Leetcode CN",
-  subTitle: "Problems"
+  subTitle: "Solved Problems"
 }
 
 const LeetcodeData = getLeetcode()
