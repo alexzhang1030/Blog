@@ -31,7 +31,8 @@ function getInitFileContent(args: Record<string, string>) {
     content += '---\n'
     for (const [key, value] of keys)
       content += `${key}: ${value}\n`
-    content += '---\n'
+    content += '---\n\r'
+    content += `# ${args.name}\n`
   }
   return content
 }
