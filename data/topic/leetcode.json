@@ -90,6 +90,12 @@
     "origin": "https://leetcode.cn/problems/remove-duplicates-from-sorted-array/"
   },
   {
+    "name": "27. 移除元素",
+    "path": "/Topic/Leetcode/Problems/00027",
+    "cate": "Easy",
+    "origin": "https://leetcode.cn/problems/remove-element/solution/"
+  },
+  {
     "name": "94. 二叉树的中序遍历",
     "path": "/Topic/Leetcode/Problems/00094",
     "cate": "Easy",
