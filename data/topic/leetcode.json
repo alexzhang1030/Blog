@@ -24,6 +24,12 @@
     "origin": "https://leetcode.cn/problems/longest-palindromic-substring/"
   },
   {
+    "name": "7. 整数反转",
+    "path": "/Topic/Leetcode/Problems/00007",
+    "cate": "Medium",
+    "origin": "https://leetcode.cn/problems/reverse-integer/"
+  },
+  {
     "name": "9. 回文数",
     "path": "/Topic/Leetcode/Problems/00009",
     "cate": "Easy",
