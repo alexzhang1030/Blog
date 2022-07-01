@@ -31,8 +31,8 @@ export default async () => {
         { icon: 'github', link: 'https://github.com/alexzhang1030/Blog' },
       ],
       algolia: {
-        appId: 'OOCSYYJ17Q',
-        indexName: 'alexzhang',
+        appId: '1X9I6ALSR9',
+        indexName: 'alexzhang1030',
         apiKey: 'a386a7bae0605420f6b4f0cc2eaf4f2a',
       },
       sidebar,
