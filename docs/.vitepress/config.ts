@@ -33,7 +33,7 @@ export default async () => {
       algolia: {
         appId: '1X9I6ALSR9',
         indexName: 'alexzhang1030',
-        apiKey: 'a386a7bae0605420f6b4f0cc2eaf4f2a',
+        apiKey: 'a40ad8d1d06d5c20f97dcdb51743cd41',
       },
       sidebar,
     },
