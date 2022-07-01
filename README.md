@@ -1,9 +1,8 @@
 # Blog
 alexzhang1030‘s blog, only for interested things
 
+## How to add a new Topic
 
-## Todo
-
-- create file cli
-- generate data cli
-- improve topic
+- `data/topic.json` add
+- `docs/.vitepress/data/helper.ts`：mapping
+- `docs/Topic/Leetcode`: add new topic
