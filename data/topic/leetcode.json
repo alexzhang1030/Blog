@@ -24,6 +24,12 @@
     "origin": "https://leetcode.cn/problems/longest-palindromic-substring/"
   },
   {
+    "name": "6. Z 字形变换",
+    "path": "/Topic/Leetcode/Problems/00006",
+    "cate": "Medium",
+    "origin": "https://leetcode.cn/problems/zigzag-conversion/"
+  },
+  {
     "name": "7. 整数反转",
     "path": "/Topic/Leetcode/Problems/00007",
     "cate": "Medium",
