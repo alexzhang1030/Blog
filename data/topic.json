@@ -52,5 +52,22 @@
         "message": "文章名称"
       }
     ]
+  },
+  {
+    "name": "browser",
+    "display_name": "浏览器",
+    "path_name": "Browser/Articles",
+    "home_page": "/Browser/index",
+    "color": {
+      "bg": "linear-gradient(to right, #FF3399, #0166FF)",
+      "text": "white"
+    },
+    "questions": [
+      {
+        "name": "name",
+        "type": "input",
+        "message": "文章名称"
+      }
+    ]
   }
 ]

@@ -4,6 +4,7 @@ import TopicData from '../../../../data/topic.json'
 // import data
 import LeetcodeData from '../../../../data/topic/leetcode.json'
 import EngineeringData from '../../../../data/topic/engineering.json'
+import BrowserData from '../../../../data/topic/browser.json'
 import NavData from './nav'
 
 export const TOPIC_PATH_PREFIX = '/Topic'
@@ -29,6 +30,7 @@ export function getNav(): DefaultTheme.NavItem[] {
 const mapping: Record<string, any> = {
   leetcode: LeetcodeData,
   engineering: EngineeringData,
+  browser: BrowserData,
 }
 
 export async function getSidebar(): Promise<DefaultTheme.Sidebar> {
@@ -52,4 +54,8 @@ export function getLeetcode(): Leetcode[] {
 
 export function getEngineering() {
   return EngineeringData
+}
+
+export function getBrowserData() {
+  return BrowserData
 }

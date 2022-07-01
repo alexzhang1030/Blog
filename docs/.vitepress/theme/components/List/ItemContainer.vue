@@ -15,7 +15,7 @@ const goTo = () => {
 
 <template>
   <div
-    w="100%" sm="w-31%" rounded h-120px bg-gray-200 dark="bg-gray-300"
+    w="100%" sm="w-31%" rounded bg-gray-200 dark="bg-gray-300"
     hover="translate-y--2px" transition="duration-200" cursor="pointer"
     relative p-4 box-border text-12px
     mb-20px

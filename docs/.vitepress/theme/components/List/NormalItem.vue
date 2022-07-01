@@ -8,21 +8,11 @@ const props = defineProps<{
 </script>
 
 <template>
-  <item-container :path="props.path">
+  <item-container :path="props.path" h-60px>
     <div dark="text-gray-800" w-full h-full flex="~ col" justify="between" items="start">
-      <div text-18px w-full class="title">
+      <div text-18px w-full truncate>
         {{ props.name }}
       </div>
     </div>
   </item-container>
 </template>
-
-<style scoped>
-.title {
-  overflow : hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-</style>

@@ -32,7 +32,7 @@ const open = (path: string) => {
 </script>
 
 <template>
-  <item-container leetcode :path="props.path">
+  <item-container leetcode :path="props.path" h-120px>
     <div dark="text-gray-800" w-full h-full flex="~ col" justify="between" items="start">
       <div text-18px class="title" w-full>
         {{ props.name }}

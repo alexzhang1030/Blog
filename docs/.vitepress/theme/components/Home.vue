@@ -12,7 +12,7 @@ const TopicData = getTopicData()
     <cate title="Topic">
       <topic-container
         v-for="(topic, i) of TopicData" :key="i" text="24px"
-        :style="{ color: topic.color.text, backgroundColor: topic.color.bg }"
+        :style="{ color: topic.color.text, background: topic.color.bg }"
         :name="topic.name" :link="topic.path"
       />
     </cate>
