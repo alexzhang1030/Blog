@@ -36,6 +36,12 @@
     "origin": "https://leetcode.cn/problems/reverse-integer/"
   },
   {
+    "name": "8. 字符串转整数",
+    "path": "/Topic/Leetcode/Problems/00008",
+    "cate": "Medium",
+    "origin": "https://leetcode.cn/problems/string-to-integer-atoi/"
+  },
+  {
     "name": "9. 回文数",
     "path": "/Topic/Leetcode/Problems/00009",
     "cate": "Easy",
