@@ -132,6 +132,12 @@
     "origin": "https://leetcode.cn/problems/remove-element/solution/"
   },
   {
+    "name": "28. 实现 strStr()",
+    "path": "/Topic/Leetcode/Problems/00028",
+    "cate": "Easy",
+    "origin": "https://leetcode.cn/problems/implement-strstr/submissions/"
+  },
+  {
     "name": "94. 二叉树的中序遍历",
     "path": "/Topic/Leetcode/Problems/00094",
     "cate": "Easy",
