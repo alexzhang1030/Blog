@@ -138,6 +138,12 @@
     "origin": "https://leetcode.cn/problems/implement-strstr/submissions/"
   },
   {
+    "name": "29. 两数相除",
+    "path": "/Topic/Leetcode/Problems/00029",
+    "cate": "Medium",
+    "origin": "https://leetcode.cn/problems/divide-two-integers/submissions/"
+  },
+  {
     "name": "94. 二叉树的中序遍历",
     "path": "/Topic/Leetcode/Problems/00094",
     "cate": "Easy",
