@@ -7,7 +7,8 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "prepare": "husky install",
-    "gen": "tsx ./scripts/generate.ts"
+    "gen": "tsx ./scripts/generate.ts",
+    "gen:t": "tsx ./scripts/generate_topic.ts"
   },
   "devDependencies": {
     "@alexzzz/eslint-config": "^1.3.0",
