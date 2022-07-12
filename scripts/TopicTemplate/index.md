@@ -8,11 +8,11 @@ import NormalItem from "/@theme/components/List/NormalItem.vue"
 import { getDataByTopicName } from '/@theme/data'
 
 const props = {
-  title: "工程化",
+  title: "${topic_display_name}",
   subTitle: "Articles"
 }
 
-const data = getDataByTopicName("engineering")
+const data = getDataByTopicName("${topic_name}")
 </script>
 
 <Container v-bind="props">

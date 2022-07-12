@@ -1,6 +1,7 @@
 import { writeFileSync } from 'fs'
 import inquirer from 'inquirer'
 import fg from 'fast-glob'
+import { sync as execSync } from 'cross-spawn'
 import topic from '../data/topic.json'
 import { padStart, taskLogger, withRoot } from './helper'
 import { main as generatePageData } from './generate_data'
@@ -22,6 +23,8 @@ async function main() {
   writeFileSync(fullCreatePath, getInitFileContent(answers))
   taskLogger.end(`${topic_type} 创建完毕`)
   await generateData(topic_type)
+  // generate vitepress need data
+  execSync('npm', ['run', 'gv'], { stdio: 'inherit' })
 }
 
 function getInitFileContent(args: Record<string, string>) {

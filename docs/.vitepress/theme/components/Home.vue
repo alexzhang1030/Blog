@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getTopicData } from '../data'
+import { getTopicData } from '../data/helper'
 import TopicContainer from './Topic/HomeItem.vue'
 import Cate from './Header.vue'
 import PageContainer from './PageContainer.vue'

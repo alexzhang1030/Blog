@@ -26,4 +26,8 @@ export function padStart(source: string, count: number, padStr: string): string 
   return final
 }
 
+export function FirstUpperCase(str: string) {
+  return str.replace(/(\w)/, (_, l) => l.toUpperCase())
+}
+
 export const taskLogger = new NL('任务', true)

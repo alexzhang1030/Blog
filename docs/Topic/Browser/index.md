@@ -5,14 +5,14 @@ layout: page
 <script setup lang="ts">
 import Container from '/@theme/components/Topic/TopicPageContainer.vue'
 import NormalItem from "/@theme/components/List/NormalItem.vue"
-import { getBrowserData } from '/@theme/data'
+import { getDataByTopicName } from '/@theme/data'
 
 const props = {
   title: "浏览器",
   subTitle: "Articles"
 }
 
-const data = getBrowserData()
+const data = getDataByTopicName("browser")
 </script>
 
 <Container v-bind="props">
