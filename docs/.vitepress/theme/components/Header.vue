@@ -12,7 +12,7 @@ const props = defineProps<{
   >
     {{ props.title }}
   </h1>
-  <div w-full flex="~ wrap" justify="between" gap="20px">
+  <div w-full flex="~ wrap" justify-start gap="2%">
     <slot />
   </div>
 </template>

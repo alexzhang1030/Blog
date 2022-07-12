@@ -16,11 +16,12 @@ const goToLink = () => {
 <template>
   <div
     w-full
-    md:w="23%" h-80px flex="~"
+    md:w="23.5%" h-80px flex="~"
     items="center" justify="flex-start"
     px-2 box-border rounded-md
-    hover="translate-y--1" transition="all"
+    hover="translate-y--0.6" transition="all"
     cursor="pointer" @click="goToLink()"
+    mb="20px"
   >
     <div w-full truncate>{{ props.name }}</div>
   </div>
