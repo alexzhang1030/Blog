@@ -1,8 +1,10 @@
-import { writeFileSync } from 'fs'
+import { readFileSync, writeFileSync } from 'fs'
 import Inquirer from 'inquirer'
+import { ensureDirSync } from 'fs-extra'
+import { sync as execSync } from 'cross-spawn'
 import TopicData from '../data/topic.json'
 import type { TopicDataItem, TopicDataItemWhenGenerate } from '../types/index'
-import { withRoot } from './helper'
+import { FirstUpperCase, taskLogger, withRoot } from './helper'
 
 const questions = [
   {
@@ -20,14 +22,14 @@ const questions = [
     name: 'path_name',
     message: 'What\'s the new topic path on your disk?',
     default: ({ name }: { name: string }) =>
-      `${name.replace(/(\w)/, (_, l) => l.toUpperCase())}/Articles`,
+      `${FirstUpperCase(name)}/Articles`,
   },
   {
     type: 'input',
     name: 'home_page',
     message: 'What\'s the new topic home page path on your disk?',
     default: ({ name }: { name: string }) =>
-      `/${name.replace(/(\w)/, (_, l) => l.toUpperCase())}/index`,
+      `/${FirstUpperCase(name)}/index`,
   },
   {
     type: 'input',
@@ -65,14 +67,32 @@ async function generateTopicData() {
   return data
 }
 
-// async function generateRealPath(data) {
+const getNeedReplaceData = ({ name, display_name }: { name: string; display_name: string }) => ({
+  topic_display_name: display_name,
+  topic_name: name,
+})
 
-// }
+const getPlaceholder = (key: string) => `\${${key}}`
+
+async function generateRealPath({ name, display_name }: TopicDataItem) {
+  ensureDirSync(withRoot(`./docs/${FirstUpperCase(name)}`))
+  let topicHomeContent = readFileSync(withRoot('./TopicTemplate/index.md'), 'utf8')
+  const replaceData = getNeedReplaceData({ name, display_name })
+  Object.keys(replaceData).forEach((key) => {
+    topicHomeContent = topicHomeContent.replace(getPlaceholder(key), replaceData[key])
+  })
+  writeFileSync(withRoot(`./docs/${FirstUpperCase(name)}/index.md`), topicHomeContent, 'utf8')
+  ensureDirSync(withRoot(`./docs/${FirstUpperCase(name)}/Articles`))
+}
 
 async function main() {
   // 1. generate topic data
-  await generateTopicData()
+  const data = await generateTopicData()
   // 2. generate real path
+  await generateRealPath(data)
+  // 3. generate vitepress data
+  execSync('npm', 'run gv')
+  taskLogger.end('任务完成')
 }
 
 main()
