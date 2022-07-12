@@ -91,7 +91,7 @@ async function main() {
   // 2. generate real path
   await generateRealPath(data)
   // 3. generate vitepress data
-  execSync('npm', 'run gv')
+  execSync('npm', ['run', 'gv'], { stdio: 'inherit' })
   taskLogger.end('任务完成')
 }
 
