@@ -13,6 +13,7 @@ const NavData = [
 ] as DefaultTheme.NavItem[]
 
 export const TOPIC_PATH_PREFIX = '/Topic'
+const withVitepress = (url: string) => withRoot(`./data/vitepress${url}`)
 
 // 生成 nav 数据和 sidebar 数据
 function generateNav() {
@@ -20,8 +21,8 @@ function generateNav() {
     text: t.display_name,
     link: `${TOPIC_PATH_PREFIX}${t.home_page}`,
   })), ...NavData]
-  ensureDirSync(withRoot('./data/vitepress'))
-  writeFileSync(withRoot('./data/vitepress/nav.json'), JSON.stringify(nav, null, 2))
+  ensureDirSync(withVitepress(''))
+  writeFileSync(withRoot(withVitepress('/nav.json')), JSON.stringify(nav, null, 2))
 }
 
 // sidebar and topic data
@@ -40,8 +41,8 @@ export async function generateSidebarAndTopic() {
     }]
     topicData[t.name] = TopicArticleData
   }
-  writeFileSync(withRoot('./data/vitepress/sidebar.json'), JSON.stringify(result, null, 2))
-  writeFileSync(withRoot('./data/vitepress/topic.json'), JSON.stringify(topicData, null, 2))
+  writeFileSync(withVitepress('/sidebar.json'), JSON.stringify(result, null, 2))
+  writeFileSync(withVitepress('/topic.json'), JSON.stringify(topicData, null, 2))
 }
 
 function main() {
