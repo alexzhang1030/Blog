@@ -76,7 +76,7 @@ const getPlaceholder = (key: string) => `\${${key}}`
 
 async function generateRealPath({ name, display_name }: TopicDataItem) {
   ensureDirSync(withRoot(`./docs/${FirstUpperCase(name)}`))
-  let topicHomeContent = readFileSync(withRoot('./TopicTemplate/index.md'), 'utf8')
+  let topicHomeContent = readFileSync(withRoot('/scripts/TopicTemplate/index.md'), 'utf8')
   const replaceData = getNeedReplaceData({ name, display_name })
   Object.keys(replaceData).forEach((key) => {
     topicHomeContent = topicHomeContent.replace(getPlaceholder(key), replaceData[key])
