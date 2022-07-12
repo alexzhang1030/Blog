@@ -115,6 +115,12 @@
       "origin": "https://leetcode.cn/problems/merge-two-sorted-lists/"
     },
     {
+      "name": "22. 括号生成",
+      "path": "/Topic/Leetcode/Problems/00022",
+      "cate": "Medium",
+      "origin": "https://leetcode.cn/problems/generate-parentheses/"
+    },
+    {
       "name": "23. 合并 K 个升序链表",
       "path": "/Topic/Leetcode/Problems/00023",
       "cate": "Hard",
