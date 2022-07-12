@@ -6,13 +6,18 @@ layout: page
 import Container from '/@theme/components/Topic/TopicPageContainer.vue'
 import NormalItem from "/@theme/components/List/NormalItem.vue"
 import { getDataByTopicName } from '/@theme/data'
+import { ref } from 'vue'
 
 const props = {
   title: "浏览器",
   subTitle: "Articles"
 }
 
-const data = getDataByTopicName("browser")
+const data = ref([])
+
+getDataByTopicName("browser").then(res => {
+  data.value = res
+})
 </script>
 
 <Container v-bind="props">

@@ -40,5 +40,5 @@ export async function getSidebar(): Promise<DefaultTheme.Sidebar> {
 }
 
 export async function getDataByTopicName(topicName: string) {
-  return await import(`../../data/topic/${topicName}.json`, { assert: { type: 'json' } })
+  return (await import(`../../data/topic/${topicName}.json`) as { default: any[] }).default
 }

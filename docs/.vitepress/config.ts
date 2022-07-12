@@ -16,7 +16,8 @@ export default async () => {
           presetAttributify(),
           presetUno(),
         ],
-      })],
+      }),
+      ],
     },
     markdown: {
       theme: 'one-dark-pro',
