@@ -10,7 +10,7 @@ const questions = [
   {
     type: 'input',
     name: 'name',
-    message: 'What\'s the new topic name?',
+    message: 'What\'s the new topic name?(must lowercase !!!)',
   },
   {
     type: 'input',
@@ -61,7 +61,13 @@ async function generateTopicData() {
       bg: background_color,
       text: text_color,
     },
-    questions: [],
+    questions: [
+      {
+        name: 'name',
+        type: 'input',
+        message: '文章名称',
+      },
+    ],
   } as TopicDataItem
   writeFileSync(withRoot('./data/topic.json'), JSON.stringify([...TopicData, data], null, 2))
   return data
@@ -75,14 +81,17 @@ const getNeedReplaceData = ({ name, display_name }: { name: string; display_name
 const getPlaceholder = (key: string) => `\${${key}}`
 
 async function generateRealPath({ name, display_name }: TopicDataItem) {
-  ensureDirSync(withRoot(`./docs/${FirstUpperCase(name)}`))
+  ensureDirSync(withRoot(`./docs/Topic/${FirstUpperCase(name)}`))
   let topicHomeContent = readFileSync(withRoot('./scripts/TopicTemplate/index.md'), 'utf8')
   const replaceData = getNeedReplaceData({ name, display_name })
   Object.keys(replaceData).forEach((key) => {
     topicHomeContent = topicHomeContent.replace(getPlaceholder(key), replaceData[key])
   })
-  writeFileSync(withRoot(`./docs/${FirstUpperCase(name)}/index.md`), topicHomeContent, 'utf8')
-  ensureDirSync(withRoot(`./docs/${FirstUpperCase(name)}/Articles`))
+  // generate docs path
+  writeFileSync(withRoot(`./docs/Topic/${FirstUpperCase(name)}/index.md`), topicHomeContent, 'utf8')
+  ensureDirSync(withRoot(`./docs/Topic/${FirstUpperCase(name)}/Articles`))
+  // generate data file
+  writeFileSync(withRoot(`./data/topic/${name}.json`), JSON.stringify([], null, 2))
 }
 
 async function main() {

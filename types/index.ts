@@ -1,3 +1,4 @@
+import type Inquirer from 'inquirer'
 export interface Topic {
   name: string
   // base by Topic/
@@ -35,5 +36,5 @@ export interface TopicDataItem {
   path_name: string
   home_page: string
   // when you create a topic's article, it will show what questions
-  questions: []
+  questions: Inquirer.Question[]
 }

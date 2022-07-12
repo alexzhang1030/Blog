@@ -25,7 +25,7 @@ function generateNav() {
 }
 
 // sidebar and topic data
-async function generateSidebar() {
+export async function generateSidebarAndTopic() {
   const result: DefaultTheme.Sidebar = {}
   const topicData: Record<string, any[]> = {}
   for (let i = 0; i < TopicData.length; i++) {
@@ -47,7 +47,7 @@ async function generateSidebar() {
 function main() {
   taskLogger.start('开始生成 vitepress 需要数据')
   generateNav()
-  generateSidebar()
+  generateSidebarAndTopic()
   taskLogger.end('生成完毕')
 }
 
