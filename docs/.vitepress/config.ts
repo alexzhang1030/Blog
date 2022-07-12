@@ -4,8 +4,8 @@ import { presetAttributify, presetUno } from 'unocss'
 import { getNav, getSidebar } from './theme/data'
 
 export default defineConfig({
-  title: 'Alex\'s Website & Blog',
-  description: 'A personal website of Alex Zhang',
+  title: 'Website & Blog',
+  description: 'A personal website',
   lastUpdated: true,
   vite: {
     plugins: [
@@ -22,17 +22,17 @@ export default defineConfig({
   },
   themeConfig: {
     footer: {
-      message: 'Love & Peace & Vue Ecosystem',
-      copyright: 'Copyright © 2022-present Alex Zhang',
+      message: 'bottom message',
+      copyright: 'Copyright © 2022-present',
     },
     nav: getNav(),
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/alexzhang1030/Blog' },
+      { icon: 'github', link: '' },
     ],
     algolia: {
-      appId: '1X9I6ALSR9',
-      indexName: 'alexzhang1030',
-      apiKey: 'a40ad8d1d06d5c20f97dcdb51743cd41',
+      appId: '',
+      indexName: '',
+      apiKey: '',
     },
     sidebar: getSidebar(),
   },
