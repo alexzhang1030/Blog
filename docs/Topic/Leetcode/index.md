@@ -6,19 +6,13 @@ layout: page
 import Container from '/@theme/components/Topic/TopicPageContainer.vue'
 import LeetcodeItem from "/@theme/components/List/LeetcodeItem.vue"
 import { getDataByTopicName } from '/@theme/data'
-import { ref } from 'vue'
 
 const props = {
   title: "Leetcode CN",
   subTitle: "Solved Problems"
 }
 
-const leetcodeData = ref([])
-
-getDataByTopicName("leetcode").then(res => {
-  console.log({res});
-  leetcodeData.value = res
-})
+const leetcodeData = getDataByTopicName("leetcode") 
 </script>
 
 <Container v-bind="props">
