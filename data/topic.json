@@ -37,6 +37,23 @@
     ]
   },
   {
+    "name": "algorithm",
+    "display_name": "算法与数据结构",
+    "path_name": "Algorithm/Articles",
+    "home_page": "/Algorithm/index",
+    "color": {
+      "bg": "#74759b",
+      "text": "#e2e1e4"
+    },
+    "questions": [
+      {
+        "name": "name",
+        "type": "input",
+        "message": "文章名称"
+      }
+    ]
+  },
+  {
     "name": "engineering",
     "display_name": "工程化",
     "path_name": "Engineering/Articles",

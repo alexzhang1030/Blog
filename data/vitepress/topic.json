@@ -175,6 +175,12 @@
       "origin": "https://leetcode.cn/problems/k-diff-pairs-in-an-array/"
     }
   ],
+  "algorithm": [
+    {
+      "name": "数据结构(一)",
+      "path": "/Topic/Algorithm/Articles/00001"
+    }
+  ],
   "engineering": [
     {
       "name": "为你的项目集成 eslint + lint-staged + commitlint",

@@ -122,6 +122,17 @@
       ]
     }
   ],
+  "/Topic/Algorithm/Articles": [
+    {
+      "text": "算法与数据结构",
+      "items": [
+        {
+          "text": "数据结构(一)",
+          "link": "/Topic/Algorithm/Articles/00001"
+        }
+      ]
+    }
+  ],
   "/Topic/Engineering/Articles": [
     {
       "text": "工程化",
