@@ -163,6 +163,12 @@
       "origin": "https://leetcode.cn/problems/binary-tree-inorder-traversal/"
     },
     {
+      "name": "100. 相同的树",
+      "path": "/Topic/Leetcode/Problems/00100",
+      "cate": "Easy",
+      "origin": "https://leetcode.cn/problems/same-tree/"
+    },
+    {
       "name": "498. 对角线遍历",
       "path": "/Topic/Leetcode/Problems/00498",
       "cate": "Medium",
