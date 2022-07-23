@@ -18,5 +18,9 @@
   {
     "name": "算法的衡量——时间与空间复杂度",
     "path": "/Topic/Algorithm/Articles/00005"
+  },
+  {
+    "name": "算法中数组的应用",
+    "path": "/Topic/Algorithm/Articles/00006"
   }
 ]
