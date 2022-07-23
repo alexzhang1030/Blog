@@ -156,6 +156,12 @@
     "origin": "https://leetcode.cn/problems/divide-two-integers/submissions/"
   },
   {
+    "name": "88. 合并两个有序数组",
+    "path": "/Topic/Leetcode/Problems/00088",
+    "cate": "Easy",
+    "origin": "https://leetcode.cn/problems/merge-sorted-array/"
+  },
+  {
     "name": "94. 二叉树的中序遍历",
     "path": "/Topic/Leetcode/Problems/00094",
     "cate": "Easy",

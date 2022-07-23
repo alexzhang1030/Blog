@@ -108,6 +108,10 @@
           "link": "/Topic/Leetcode/Problems/00029"
         },
         {
+          "text": "88. 合并两个有序数组",
+          "link": "/Topic/Leetcode/Problems/00088"
+        },
+        {
           "text": "94. 二叉树的中序遍历",
           "link": "/Topic/Leetcode/Problems/00094"
         },
@@ -149,6 +153,10 @@
         {
           "text": "算法的衡量——时间与空间复杂度",
           "link": "/Topic/Algorithm/Articles/00005"
+        },
+        {
+          "text": "算法中数组的应用",
+          "link": "/Topic/Algorithm/Articles/00006"
         }
       ]
     }
