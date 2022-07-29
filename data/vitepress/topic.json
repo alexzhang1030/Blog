@@ -227,6 +227,10 @@
     {
       "name": "环形链表",
       "path": "/Topic/Algorithm/Articles/00010"
+    },
+    {
+      "name": "栈和队列怎么玩（上）",
+      "path": "/Topic/Algorithm/Articles/00011"
     }
   ],
   "engineering": [

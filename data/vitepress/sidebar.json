@@ -173,6 +173,10 @@
         {
           "text": "环形链表",
           "link": "/Topic/Algorithm/Articles/00010"
+        },
+        {
+          "text": "栈和队列怎么玩（上）",
+          "link": "/Topic/Algorithm/Articles/00011"
         }
       ]
     }
