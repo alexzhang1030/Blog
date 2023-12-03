@@ -1,4 +1,4 @@
-FROM node:14 as builder
+FROM node:20 as builder
 
 RUN curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
 
